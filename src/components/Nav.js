@@ -2,20 +2,18 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
-
-
 export default function Nav() {
   return (
     <StyledDiv>
-      <StyledLink to="/">LOGO</StyledLink>   {/* byttes med bilde*/}
+      <StyledLink to="/">LOGO</StyledLink>   {/* byttes med bilde */}
       <div>
         <StyledLink to="/måltider">Måltider</StyledLink>
         <StyledLink to="/om">Om Cooplanner</StyledLink>
+        <StyledLink to="/mealplanner">Mealplanner</StyledLink> {/* Ny fane */}
       </div>
     </StyledDiv>
   );
 }
-
 
 // Style for the navigation container
 const StyledDiv = styled.div`

@@ -40,7 +40,7 @@ export default function Home() {
     <StyledBox>
       {foods.map(food => (
         <FoodCard key={food.id}>
-          <img src={food.imageURL} alt={food.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+          <img src={food.imageUrl} alt={food.name} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
           <h3>{food.name}</h3>
           <Link to={`/${food.id}`}><button className='btn btn-success seMer'>Les mer om {food.name}</button></Link>
         </FoodCard>

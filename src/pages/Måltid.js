@@ -4,7 +4,7 @@ import { db } from '../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import styled from 'styled-components';
 
-// Styled components for better visual display
+// Styled components
 const FoodContainer = styled.div`
   max-width: 800px;
   margin: 20px auto;
@@ -70,7 +70,7 @@ function Måltid() {
       
       <h3>Ingredients</h3>
       <IngredientList>
-        {food.ingredients.map((ingredient, index) => (
+        {food.ingredients && Array.isArray(food.ingredients) && food.ingredients.map((ingredient, index) => (
           <IngredientItem key={index}>
             {ingredient.ingredient} - {ingredient.amount} {ingredient.unit}
           </IngredientItem>
