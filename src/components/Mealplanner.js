@@ -191,9 +191,11 @@ const MealPlanner = () => {
           </FoodCard>
         ))}
       </FoodGrid>
+      <h3>Din måltidsplan:</h3>
       {mealPlan.length > 0 && (
         <FoodGrid>
-          <h3>Din måltidsplan:</h3>
+          
+          
           {mealPlan.map(food => (
             <FoodCard key={food.id}>
               <img src={food.imageUrl} alt={food.name} />
@@ -202,6 +204,7 @@ const MealPlanner = () => {
               <Link to={`/${food.id}`}>
                 <Button>Les mer om {food.name}</Button>
               </Link>
+            
             </FoodCard>
           ))}
         </FoodGrid>
