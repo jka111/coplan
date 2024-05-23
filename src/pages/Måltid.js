@@ -65,7 +65,7 @@ function Måltid() {
   return (
     <FoodContainer>
       <FoodTitle>{food.name}</FoodTitle>
-      <FoodImage src={food.imageURL} alt={food.name} />
+      <FoodImage src={food.imageUrl} alt={food.name} />
       {food.description && <FoodDescription>{food.description}</FoodDescription>}
       
       <h3>Ingredients</h3>
