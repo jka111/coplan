@@ -56,7 +56,7 @@ export default function Nav() {
       )}
       <div>
         <StyledLink to="/mealplanner">Mealplanner</StyledLink> {/* Ny fane */}
-        <StyledLink to="/home">Home</StyledLink>
+        <StyledLink to="/home">Måltid</StyledLink>
         <StyledLink to="/om">Om Cooplanner</StyledLink>
       </div>
     </StyledDiv>
